@@ -21,7 +21,7 @@ exports.calcularMetodoFrances = (capital, tasaInteres, plazo) => {
         // console.log('cuota  ' + cuota);
 
         //capital a pagar
-    console.log('plazo'+' | '+'deuda'+' | '+'interes'+' | '+'cuota'+' | '+'capital ');
+    console.log(' | '+'plazo'+' | '+'deuda'+' | '+'interes'+' | '+'cuota'+' | '+'capital ');
   // for
   for (let i = 1; i <= plazo; i++) {
       interes = capital * tasaInteresDecimal;
@@ -30,7 +30,7 @@ exports.calcularMetodoFrances = (capital, tasaInteres, plazo) => {
       interes = interes.toFixed(2);
       capital = capital.toFixed(2);
       deuda = deuda .toFixed(2);
-      console.log(plazo+' | '+deuda+' | '+interes+' | '+cuota+' | '+capital );
+      console.log(' | '+i+'     | '+deuda+' | '+interes+' | '+cuota+' | '+capital );
     
     }
 };
