@@ -12,10 +12,9 @@ const app = express();
 
 // Indicar a express utilizar handlebars como template engine
 app.engine("hbs", exphbs({ defaultLayout: "main", extname: ".hbs" }));
-// app.engine("hbs", exphbs({ defaultLayout: false}));
+
 app.set("view engine", "hbs");
-// app.set("views", "views");
-app.locals.layout = false;
+
 
 //  Habilitar body parse para leer los datos del cuerpo de peticiones POST
 // app.use(bodyParser.urlencoded({ extended: true }));
